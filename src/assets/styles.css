@@ -1,0 +1,35 @@
+#header {
+  display: flex;
+}
+#sub-header {
+  /* display: flex; */
+  /* background-color: #222; */
+  /* z-index: 10; */
+  border-bottom: 2px solid #eee;
+}
+
+#main {
+  position: relative;
+  top: 90px;
+}
+
+.utbx-fitted-max {
+  max-height: 90vh;
+  overflow-y: scroll;
+  padding-top: 1px !important;
+  /* above instead of 0px - needed for .card */
+}
+
+.utbx-sticky {
+  position: sticky;
+  z-index: 10;
+}
+
+.utbx-menu-bg-overide {
+  background-color: #ffffff !important;
+}
+
+.utbx-scanned-doc {
+  padding: 2em 2em;
+  background-color: #ededed;
+}

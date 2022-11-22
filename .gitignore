@@ -3,3 +3,5 @@
 /coverage
 .DS_Store
 .env
+/src/assets/examples/*.png
+/src/assets/examples/*.pdf

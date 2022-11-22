@@ -10,9 +10,12 @@ class Main extends Component {
   render() {
     return (
       <>
-        <h2>Main</h2>
-        <Content />
-        <Sidebar />
+        <div className='ui fluid container' id='main'>
+          <div className='ui grid'>
+            <Content />
+            <Sidebar />
+          </div>
+        </div>
       </>
     );
   }
