@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
+// import 'semantic-ui-css/semantic.min.css'; // using CDN for now
 
 import store from './app/store';
-import App from './app/App.jsx';
+import App from './app/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
