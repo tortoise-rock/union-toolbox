@@ -1,1 +1,2 @@
-export const SET_TEST_VALUE = 'SET_TEST_VALUE';
+export const SET_TITLE = 'SET_TITLE';
+export const SET_HEADER = 'SET_HEADER';

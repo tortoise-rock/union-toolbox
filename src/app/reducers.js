@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import testValueReducer from '../reducers/testValueReducer';
+import payrollReducer from '../reducers/payrollReducer';
 
 const rootReducer = combineReducers({
-  testValue: testValueReducer,
+  payroll: payrollReducer,
 });
 
 export default rootReducer;

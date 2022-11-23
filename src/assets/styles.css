@@ -10,7 +10,7 @@
 
 #main {
   position: relative;
-  top: 90px;
+  top: 100px;
 }
 
 .utbx-fitted-max {
@@ -32,4 +32,13 @@
 .utbx-scanned-doc {
   padding: 2em 2em;
   background-color: #ededed;
+}
+
+.utbx-center-icon-temp {
+  padding-top: 0.65em;
+}
+
+.utbx-center-icon-temp a i.icon {
+  color: #999999;
+  padding-left: 0.2em;
 }
