@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-// import 'semantic-ui-css/semantic.min.css'; // using CDN for now
+import 'semantic-ui-css/semantic.min.css';
 
 import store from './app/store';
 import App from './app/App';
