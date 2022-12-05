@@ -4,17 +4,18 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 // eslint-disable-next-line eqeqeq
 const isProduction = process.env.NODE_ENV == 'production';
-
 const stylesHandler = 'style-loader';
 
 const config = {
   entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
   },
   devServer: {
     open: true,
     host: 'localhost',
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
