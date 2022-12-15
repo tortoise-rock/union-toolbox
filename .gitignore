@@ -1,8 +1,8 @@
-/build
-/dist
-/node_modules
-/coverage
+build
+dist
+node_modules
+coverage
 .DS_Store
 .env
-/src/assets/examples/*.png
-/src/assets/examples/*.pdf
+/src/web/assets/examples/*.png
+/src/web/assets/examples/*.pdf

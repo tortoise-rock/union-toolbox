@@ -2,14 +2,15 @@
   "name": "union-toolbox-frontend",
   "version": "0.0.1",
   "description": "",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
     "dev": "webpack --mode=development & webpack-dev-server --open",
+    "dev:docker": "webpack --mode=development & webpack-dev-server",
     "build": "webpack --mode=production --define-process-env-node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --define-process-env-node-env=production",
-    "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
