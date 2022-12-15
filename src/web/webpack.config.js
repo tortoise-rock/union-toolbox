@@ -7,7 +7,7 @@ const isProduction = process.env.NODE_ENV == 'production';
 const stylesHandler = 'style-loader';
 
 const config = {
-  entry: './src/index.jsx',
+  entry: './index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
@@ -19,10 +19,10 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './index.html',
     }),
     new CopyPlugin({
-      patterns: [{ from: './src/assets', to: './assets' }],
+      patterns: [{ from: './assets', to: './assets' }],
     }),
   ],
   module: {
