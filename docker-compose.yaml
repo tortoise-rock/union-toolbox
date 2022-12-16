@@ -5,4 +5,4 @@ services:
     build: ./src/web
     ports:
       - '8080:8080'
-    command: npm run serve
+    command: npm run start
