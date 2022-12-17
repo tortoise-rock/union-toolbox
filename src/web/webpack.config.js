@@ -29,6 +29,7 @@ const config = {
     rules: [
       {
         test: /\.(js|jsx)$/i,
+        exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
           presets: ['@babel/preset-react'],
@@ -36,10 +37,12 @@ const config = {
       },
       {
         test: /\.css$/i,
+        // exclude: /node_modules/, // TODO exclude node_modules but include @semantic-ui-react
         use: [stylesHandler, 'css-loader'],
       },
       {
         test: /\.s[ac]ss$/i,
+        exclude: /node_modules/,
         use: [stylesHandler, 'css-loader', 'sass-loader'],
       },
       {
