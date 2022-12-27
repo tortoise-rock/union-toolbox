@@ -10,11 +10,11 @@
 
 #main {
   position: relative;
-  top: 100px;
+  top: 90px;
 }
 
 .utbx-fitted-max {
-  max-height: 90vh;
+  max-height: 91vh;
   overflow-y: scroll;
   padding-top: 1px !important;
   /* above instead of 0px - needed for .card */
