@@ -1,13 +1,17 @@
-require('dotenv').config();
+require('dotenv').config({ path: '../../.env' });
 
 const express = require('express');
 
 const app = express();
-const { PORT } = process.env;
+const { API_PORT: PORT } = process.env;
 
 app.use(express.json());
 
 const apiRouter = require('./routes/api');
+
+app.get('/', (req, res) => {
+  res.sendStatus(200);
+});
 
 app.use('/api', apiRouter);
 
