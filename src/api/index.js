@@ -1,6 +1,6 @@
 require('dotenv').config({ path: '../../.env' });
-
 const express = require('express');
+const { Employers } = require('./models/models');
 
 const app = express();
 const { API_PORT: PORT } = process.env;
