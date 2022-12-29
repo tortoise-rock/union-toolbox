@@ -1,8 +1,15 @@
 version: '3.9'
 
 services:
+  api:
+    build: ./src/api
+    environment:
+      - API_PORT=${API_PORT}
+    ports:
+      - '${API_PORT}:${API_PORT}'
+    command: npm start
   web:
     build: ./src/web
     ports:
       - '8080:8080'
-    command: npm run start
+    command: npm start
