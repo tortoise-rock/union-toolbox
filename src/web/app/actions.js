@@ -2,16 +2,16 @@ import axios from 'axios';
 /* eslint-disable import/prefer-default-export */
 import * as types from '../constants/actionTypes';
 
-export const getHeaderTabBegin = () => ({
+const getHeaderTabBegin = () => ({
   type: types.SET_HEADER_TAB_BEGIN,
 });
 
-export const getHeaderTabSuccess = (data) => ({
+const getHeaderTabSuccess = (data) => ({
   type: types.SET_HEADER_TAB_SUCCESS,
   payload: { data },
 });
 
-export const getHeaderTabFailure = (error) => ({
+const getHeaderTabFailure = (error) => ({
   type: types.SET_HEADER_TAB_FAILURE,
   payload: { error },
 });
