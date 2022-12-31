@@ -21,8 +21,8 @@ const initialState = {
   payrollHeaderForm: headerFormOptions,
   payrollHeaderVersion: headerVersionOptions,
   payrollHeaderTitle: '',
-  payrollHeaderClient: 'Client name',
-  payrollHeaderInvoiceNumber: '103449',
+  payrollHeaderClient: '',
+  payrollHeaderInvoiceNumber: '',
 };
 
 // eslint-disable-next-line default-param-last

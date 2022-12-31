@@ -22,68 +22,72 @@ const mapDispatchToProps = (dispatch) => ({
   getHeaderTabData: () => dispatch(getHeaderTabDataActionCreator()),
 });
 
-const inputStyle = {
-  fontFamily: 'monospace',
-  color: '#616161',
-};
-
 function HeaderTab(props) {
   return (
     <>
       <div className='ui bottom attached active tab segment' data-tab='header'>
         <Form>
           <Divider horizontal>
-            <Header as='h5' style={{ textTransform: 'uppercase' }}>
-              Form
-            </Header>
+            <Header size='small' content='Form' className='utbx-uppercase' />
           </Divider>
 
-          <Form.Field>
-            <Form.Select label='Employer' options={props.employer} placeholder='Select Employer' />
-          </Form.Field>
+          <Form.Select label='Employer' options={props.employer} placeholder='Select Employer' />
 
-          <Form.Field>
-            <Form.Group>
-              <Form.Select label='Form' options={props.form} placeholder='Select Form' width={9} />
-              <Form.Select label='Version' options={props.version} placeholder='Select Version' width={7} />
-            </Form.Group>
-          </Form.Field>
+          <Form.Group>
+            <Form.Select label='Form' options={props.form} placeholder='Select Form' width={8} />
+            <Form.Select label='Version' options={props.version} placeholder='Select Version' width={8} />
+          </Form.Group>
 
           <Button primary>Apply</Button>
           <Button>Detect</Button>
 
           <Divider horizontal>
-            <Header as='h5' style={{ textTransform: 'uppercase' }}>
-              Header
-            </Header>
+            <Header size='small' content='Header' className='utbx-uppercase' />
           </Divider>
 
-          <Form.Input
-            type='text'
-            label='Title'
-            name='title'
-            id='payrollHeaderTitle'
-            style={inputStyle}
-            defaultValue={props.title}
-          />
+          <Form.Field>
+            <label>Title</label>
+            <input
+              type='text'
+              name='title'
+              id='payrollHeaderTitle'
+              className='utbx-mono'
+              defaultValue={props.title}
+            />
+          </Form.Field>
 
-          <Form.Input
-            label='Client'
-            type='text'
-            name='client'
-            id='payrollHeaderClient'
-            style={inputStyle}
-            defaultValue={props.client}
-          />
+          <Form.Field>
+            <label>Client</label>
+            <input
+              type='text'
+              name='client'
+              id='payrollHeaderClient'
+              className='utbx-mono'
+              defaultValue={props.client}
+            />
+          </Form.Field>
 
-          <Form.Input
-            label='Invoice Number'
-            type='text'
-            name='invoicenumber'
-            id='payrollHeaderInvoiceNumber'
-            style={inputStyle}
-            defaultValue={props.invoiceNumber}
-          />
+          <Form.Field>
+            <label>Invoice Number</label>
+            <input
+              type='text'
+              name='invoicenumber'
+              id='payrollHeaderInvoiceNumber'
+              className='utbx-mono'
+              defaultValue={props.invoiceNumber}
+            />
+          </Form.Field>
+
+          <Form.Field width={8}>
+            <label>Date of Event</label>
+            <input
+              type='date'
+              name='dateOfEvent'
+              id='payrollHeaderDateOfEvent'
+              className='utbx-mono'
+              // defaultValue={props.dateOfEvent}
+            />
+          </Form.Field>
         </Form>
       </div>
       <div>

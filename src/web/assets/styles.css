@@ -1,6 +1,7 @@
 #header {
   display: flex;
 }
+
 #sub-header {
   /* display: flex; */
   background-color: #fff;
@@ -41,4 +42,13 @@
 .utbx-center-icon-temp a i.icon {
   color: #999999;
   padding-left: 0.2em;
+}
+
+.utbx-uppercase {
+  text-transform: uppercase !important;
+}
+
+.utbx-mono {
+  font-family: monospace !important;
+  /* color: #616161 !important; */
 }

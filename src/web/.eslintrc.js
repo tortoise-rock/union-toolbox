@@ -19,7 +19,7 @@ module.exports = {
         imports: 'never',
         exports: 'never',
         functions: 'never',
-      }
+      },
     ],
     'jsx-quotes': ['error', 'prefer-single'],
     'jsx-a11y/label-has-associated-control': ['warn'],
