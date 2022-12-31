@@ -1,6 +1,7 @@
 #header {
   display: flex;
 }
+
 #sub-header {
   /* display: flex; */
   background-color: #fff;
@@ -41,4 +42,23 @@
 .utbx-center-icon-temp a i.icon {
   color: #999999;
   padding-left: 0.2em;
+}
+
+.utbx-uppercase {
+  text-transform: uppercase !important;
+}
+
+.utbx-mono {
+  font-family: monospace !important;
+  /* color: #616161 !important; */
+}
+
+.utbx-bg-green {
+  background-color: rgb(229, 249, 231) !important;
+}
+
+.utbx-bg-yellow {
+  background-color: rgb(255, 248, 219) !important;
+  /* color: rgb(181, 129, 5) !important; */
+  
 }

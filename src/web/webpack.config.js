@@ -1,6 +1,7 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // eslint-disable-next-line eqeqeq
 const isProduction = process.env.NODE_ENV == 'production';
@@ -18,11 +19,14 @@ const config = {
     historyApiFallback: true,
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './index.html',
-    }),
     new CopyPlugin({
       patterns: [{ from: './assets', to: './assets' }],
+    }),
+    new Dotenv({
+      path: '../../.env',
+    }),
+    new HtmlWebpackPlugin({
+      template: './index.html',
     }),
   ],
   module: {
