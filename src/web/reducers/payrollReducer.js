@@ -1,25 +1,25 @@
 import { v4 as uuidv4 } from 'uuid';
 import * as types from '../constants/actionTypes';
 
-const employerOptions = [
+const headerEmployerOptions = [
   { key: uuidv4(), text: 'Bode Inc', value: 'a1' },
   { key: uuidv4(), text: 'Hammes PLC2', value: 'a2' },
 ];
 
-const formOptions = [
+const headerFormOptions = [
   { key: uuidv4(), text: 'Consectetur Adipiscing Elit', value: 'b1' },
   { key: uuidv4(), text: 'Convallis Vulputate', value: 'b2' },
 ];
 
-const versionOptions = [
+const headerVersionOptions = [
   { key: uuidv4(), text: 'Latest', value: 'c1' },
   { key: uuidv4(), text: 'Pre-2019', value: 'c2' },
 ];
 
 const initialState = {
-  payrollHeaderEmployer: employerOptions,
-  payrollHeaderForm: formOptions,
-  payrollHeaderVersion: versionOptions,
+  payrollHeaderEmployer: headerEmployerOptions,
+  payrollHeaderForm: headerFormOptions,
+  payrollHeaderVersion: headerVersionOptions,
   payrollHeaderTitle: '',
   payrollHeaderClient: 'Client name',
   payrollHeaderInvoiceNumber: '103449',

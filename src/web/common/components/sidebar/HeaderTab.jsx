@@ -9,12 +9,12 @@ import {
 } from '../../../app/actions';
 
 const mapStateToProps = (state) => ({
-  payrollHeaderEmployer: state.payroll.payrollHeaderEmployer,
-  payrollHeaderForm: state.payroll.payrollHeaderForm,
-  payrollHeaderVersion: state.payroll.payrollHeaderVersion,
-  payrollHeaderTitle: state.payroll.payrollHeaderTitle,
-  payrollHeaderClient: state.payroll.payrollHeaderClient,
-  payrollHeaderInvoiceNumber: state.payroll.payrollHeaderInvoiceNumber,
+  employer: state.payroll.payrollHeaderEmployer,
+  form: state.payroll.payrollHeaderForm,
+  version: state.payroll.payrollHeaderVersion,
+  title: state.payroll.payrollHeaderTitle,
+  client: state.payroll.payrollHeaderClient,
+  invoiceNumber: state.payroll.payrollHeaderInvoiceNumber,
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -39,13 +39,13 @@ function HeaderTab(props) {
           </Divider>
 
           <Form.Field>
-            <Form.Select label='Employer' options={props.payrollHeaderEmployer} placeholder='Select Employer' />
+            <Form.Select label='Employer' options={props.employer} placeholder='Select Employer' />
           </Form.Field>
 
           <Form.Field>
             <Form.Group>
-              <Form.Select label='Form' options={props.payrollHeaderForm} placeholder='Select Form' width={9} />
-              <Form.Select label='Version' options={props.payrollHeaderVersion} placeholder='Select Version' width={7} />
+              <Form.Select label='Form' options={props.form} placeholder='Select Form' width={9} />
+              <Form.Select label='Version' options={props.version} placeholder='Select Version' width={7} />
             </Form.Group>
           </Form.Field>
 
@@ -64,7 +64,7 @@ function HeaderTab(props) {
             name='title'
             id='payrollHeaderTitle'
             style={inputStyle}
-            defaultValue={props.payrollHeaderTitle}
+            defaultValue={props.title}
           />
 
           <Form.Input
@@ -73,7 +73,7 @@ function HeaderTab(props) {
             name='client'
             id='payrollHeaderClient'
             style={inputStyle}
-            defaultValue={props.payrollHeaderClient}
+            defaultValue={props.client}
           />
 
           <Form.Input
@@ -82,7 +82,7 @@ function HeaderTab(props) {
             name='invoicenumber'
             id='payrollHeaderInvoiceNumber'
             style={inputStyle}
-            defaultValue={props.payrollHeaderInvoiceNumber}
+            defaultValue={props.invoiceNumber}
           />
         </Form>
       </div>
