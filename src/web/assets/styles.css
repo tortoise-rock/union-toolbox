@@ -52,3 +52,13 @@
   font-family: monospace !important;
   /* color: #616161 !important; */
 }
+
+.utbx-bg-green {
+  background-color: rgb(229, 249, 231) !important;
+}
+
+.utbx-bg-yellow {
+  background-color: rgb(255, 248, 219) !important;
+  /* color: rgb(181, 129, 5) !important; */
+  
+}

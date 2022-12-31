@@ -16,6 +16,26 @@ const headerVersionOptions = [
   { key: uuidv4(), text: 'Pre-2019', value: 'c2' },
 ];
 
+const exportAssigneeOptions = [
+  { key: uuidv4(), text: 'Jane Doe', value: 'd1' },
+  { key: uuidv4(), text: 'Sam Johnson', value: 'd2' },
+  { key: uuidv4(), text: 'Taylor Kim', value: 'd3' },
+];
+
+const exportPriorityOptions = [
+  { key: uuidv4(), text: 'Highest', value: 'highest' },
+  { key: uuidv4(), text: 'High', value: 'high' },
+  { key: uuidv4(), text: 'Standard', value: 'standard' },
+  { key: uuidv4(), text: 'Low', value: 'low' },
+  { key: uuidv4(), text: 'Lowest', value: 'lowest' },
+];
+
+const settingsDefaultTabOptions = [
+  { key: uuidv4(), text: 'Header', value: 'header' },
+  { key: uuidv4(), text: 'Members', value: 'members' },
+  { key: uuidv4(), text: 'Export', value: 'export' },
+];
+
 const initialState = {
   payrollHeaderEmployer: headerEmployerOptions,
   payrollHeaderForm: headerFormOptions,
@@ -23,6 +43,9 @@ const initialState = {
   payrollHeaderTitle: '',
   payrollHeaderClient: '',
   payrollHeaderInvoiceNumber: '',
+  payrollExportAssignee: exportAssigneeOptions,
+  payrollExportPriority: exportPriorityOptions,
+  payrollSettingsDefaultTabOptions: settingsDefaultTabOptions,
 };
 
 // eslint-disable-next-line default-param-last
